@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<title>TokyoWidget</title>
+</head>
+<body>
+	<!-- Контейнер для содержимого виджета -->
+	<div class="container">
+		<!-- Левую часть виджета верстаем блоками -->
+		<div class="inner">
+			<img src="images/backImg.png" alt="widgetWhite">
+			<img class="sun" src="images/sun.png" alt="Sun">
+			<figure class="darkTop"><p>Sunny</p></figure>
+			<figure class="redBottom"><p>Tokyo - Wednesday, July 31</p></figure>
+			<!-- Правую часть виджета размещаем в таблице -->
+			<table class="rightSide">
+				<tr>
+					<td class="tdMainTemp" colspan="6">
+						<p class="mainTemp">28 ˚C</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdGraf" colspan="6">
+						<img class="graf" src="images/graf.png" alt="weatherStatistic">
+					</td>
+				</tr>
+				<tr>
+					<td class="weatherImg" rowspan="2">
+						<img src="images/sunSmall.png" alt="Sunny">
+					</td>
+					<td rowspan="2" class="tdMiddle"></td>
+					<td rowspan="2">
+						<img src="images/sunCloudy.png" alt="SunnyCloudy">
+					</td>
+					<td rowspan="2" class="tdMiddle">
+					</td>
+					<td rowspan="2">
+						<img src="images/sunCloudy.png" alt="SunnyCloudy">
+					</td>
+				</tr>
+				<tr></tr>
+				<tr>
+					<td class="tdDay">
+						<p class="day">Thu</p>
+					</td>
+					<td class="tdMiddle"></td>
+					<td class="tdDay">
+						<p class="day">Fri</p>
+					</td>
+					<td class="tdMiddle"></td>
+					<td class="tdDay">
+						<p class="day">Sat</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdTempDay">
+						<p class="tDay">28˚C</p>
+					</td>
+					<td class="tdMiddle"></td>
+					<td class="tdTempDay">
+						<p class="tDay">22˚C</p>
+					</td>
+					<td class="tdMiddle"></td>
+					<td class="tdTempDay">
+						<p class="tDay">30˚C</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="tdTempNight">
+						<p class="tNight">18˚C</p>
+					</td><td class="tdMiddle"></td>
+					<td class="tdTempNight">
+						<p class="tNight">20˚C</p>
+					</td>
+					<td class="tdMiddle"></td>
+					<td class="tdTempNight">
+						<p class="tNight">27˚C</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

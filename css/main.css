@@ -1,0 +1,188 @@
+/*Располагаем виджет по центру страницы*/
+body {
+	background-image: url("../images/bgi.png");
+	background-repeat: no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 0;
+	/*outline: 1px solid;*/
+}
+
+.container:before {
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+	content: '';
+	/*outline: 1px solid;*/
+}
+
+.inner {
+	display: inline-block;
+	white-space: normal;
+	vertical-align: middle;
+	position: relative;
+	width: 581px;
+	height: 438px;
+	/*outline: 1px solid;*/
+
+}
+
+img {
+	display: block;
+	border: none;
+	position: absolute;
+	top: 0;
+	/*outline: 1px solid;*/
+}
+
+figure {
+	margin: 0;
+}
+
+figure p {
+	color: white;
+	font-family: "RobotoThin";
+	font-size: 20px;
+	letter-spacing: -1px;
+}
+
+.darkTop p {
+	padding-top: 30px;
+	font-size: 29px;
+}
+
+.redBottom p {
+	padding-top: 43px;
+}
+
+.darkTop {
+	background-image: url("../images/dark.png");
+	top: 240px;
+	position: absolute;
+	display: block;
+	width: 290px;
+	height: 94px;
+	color: white;
+}
+
+.redBottom {
+	background-image: url("../images/darkRed.png");
+	top: 334px;
+	position: absolute;
+	display: block;
+	width: 290px;
+	height: 104px;
+	color: white;
+}
+
+.sun {
+	left: 75px;
+	top: 41px;
+}
+
+.rightSide {
+	/*outline: 1px solid;*/
+	position: relative;
+	/*margin: 20px;*/
+	height: 438px;
+	float: right;
+	right: 38px;
+	padding-bottom: 7px;
+}
+
+span , p{
+	font-size: 15px;
+	font-family: "RobotoLight";
+	font-style:normal;
+	font-weight: lighter;
+	color: #771921;
+	margin: 0;
+	padding: 0;
+}
+
+.graf {
+	display: block;
+	position: relative;
+	width: 208px;
+	height: 55px;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+	/*outline: 1px solid;*/
+	vertical-align: middle;
+}
+
+tr {
+	margin: 0;
+	padding: 0;
+}
+
+td > img{
+	position: relative;
+	display: inline-block;
+}
+
+.weatherImg > img {
+	padding-top: 2px;
+}
+
+.weatherImg {
+	height: 37px;
+}
+
+.mainTemp {
+	font-size: 98px;
+	font-family: "RobotoThin";
+	padding: 12px 0 0 0;
+	letter-spacing: -3px;
+}
+
+.rightSide + tr {
+	border-bottom: 1px solid #771921;
+}
+
+.tNight {
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+.day {
+	padding-bottom: 2px;
+}
+.tdMiddle {
+	width: 25px;
+}
+.tdDay {
+	width: 50px; 
+	border-bottom: 1px solid #771921; 
+}
+
+.tdTempDay {
+	vertical-align: bottom;
+}
+
+.tdTempNight {
+	vertical-align: top;
+}
+
+.tdGraf {
+	border-bottom: 1px solid #771921;
+	vertical-align: center;
+	height: 95px;
+}
+
+.tdMainTemp {
+	border-bottom: 1px solid #771921;
+	height: 140px;
+}
